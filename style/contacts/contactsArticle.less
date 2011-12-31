@@ -24,7 +24,7 @@ article {
   }
 
   .right {
-    margin-left: 200px;
+    margin-left: 20%;
   }
 
   .left {
@@ -34,6 +34,12 @@ article {
       &:last-child {
         padding-bottom: 0;
       }
+    }
+  }
+  
+  @media all and (max-width: 670px) {
+    a {
+      font-size: @fontSizeHeader;
     }
   }
 }

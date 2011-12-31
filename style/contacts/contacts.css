@@ -119,11 +119,16 @@ article .name {
   font-size: 14pt;
 }
 article .right {
-  margin-left: 200px;
+  margin-left: 20%;
 }
 article .left ul {
   padding-bottom: 30px;
 }
 article .left ul:last-child {
   padding-bottom: 0;
+}
+@media all and (max-width: 670px) {
+  article a {
+    font-size: 15pt;
+  }
 }
