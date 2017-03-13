@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background-color: #707070;
+}
+header {
+  color: white;
+}
+header #logo {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 40pt;
+  text-align: center;
+}
+header .menu ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 13pt;
+}
+header .menu ul li {
+  display: inline-block;
+  padding-right: 7px;
+  border-right: 1px solid grey;
+}
+header .menu ul li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+header .menu ul li:hover {
+  color: black;
+  cursor: pointer;
+}

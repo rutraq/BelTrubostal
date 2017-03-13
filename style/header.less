@@ -1,0 +1,33 @@
+header {
+  color: @textColor-of-header;
+
+  #logo {
+    font-family: @font-for-logo;
+    font-size: 40pt;
+    text-align: center;
+  }
+
+  .menu {
+    ul {
+      list-style-type: none;
+      text-align: center;
+      font-size: 13pt;
+
+      li {
+        display: inline-block;
+        padding-right: 7px;
+        border-right: @border;
+
+        &:last-child {
+          border-right: none;
+          padding-right: 0;
+        }
+
+        &:hover {
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
