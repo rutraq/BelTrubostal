@@ -1,30 +1,91 @@
 body {
   margin: 0;
   background-color: #707070;
+  display: flex;
+  flex-direction: column;
 }
 header {
   color: white;
 }
 header #logo {
-  font-family: "Century Gothic", sans-serif;
+  font-family: 'Griffy', cursive;
   font-size: 40pt;
   text-align: center;
+}
+header .menu a {
+  color: white;
+  text-decoration: none;
 }
 header .menu ul {
   list-style-type: none;
   text-align: center;
-  font-size: 13pt;
+  font-size: 15pt;
 }
 header .menu ul li {
   display: inline-block;
   padding-right: 7px;
   border-right: 1px solid grey;
+  position: relative;
 }
 header .menu ul li:last-child {
   border-right: none;
   padding-right: 0;
 }
-header .menu ul li:hover {
+header .menu ul li a:hover {
   color: black;
   cursor: pointer;
+}
+header .menu ul li .submenu {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100%;
+  padding: 0;
+}
+header .menu ul li .submenu > li {
+  border-right: none;
+}
+header .menu ul li .submenu > li:last-child {
+  padding-right: 7px;
+}
+header .menu ul li:hover > ul {
+  display: block;
+}
+article {
+  color: white;
+  font-size: 13pt;
+  background-color: #e86b1a;
+  max-width: 800px;
+  align-self: center;
+  padding: 15px 0 15px 5px;
+}
+article a {
+  text-decoration: none;
+}
+footer {
+  background-color: #8e400e;
+  padding: 50px 0 10px 0;
+  min-width: 100%;
+  max-height: 100px;
+}
+footer figure {
+  max-width: 395px;
+  margin: 0;
+}
+footer figure figcaption {
+  position: relative;
+  top: -40px;
+  left: 50px;
+  max-width: 200px;
+}
+footer figure:first-child {
+  padding-left: 340px;
+}
+footer .telephone {
+  position: relative;
+  left: 635px;
+  top: -80px;
+}
+footer .telephone figcaption {
+  top: -50px;
 }

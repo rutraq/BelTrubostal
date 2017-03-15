@@ -8,24 +8,52 @@ header {
   }
 
   .menu {
+    a {
+      color: @textColor-of-header;
+      text-decoration: none;
+    }
+
     ul {
       list-style-type: none;
       text-align: center;
-      font-size: 13pt;
+      font-size: @fontSizeHeader;
 
       li {
         display: inline-block;
         padding-right: 7px;
         border-right: @border;
+        position: relative;
 
         &:last-child {
           border-right: none;
           padding-right: 0;
         }
 
-        &:hover {
+        a:hover {
           color: black;
           cursor: pointer;
+        }
+
+        .submenu {
+          width: 100%;
+          display: none;
+          position: absolute;
+          top: 100%;
+          padding: 0;
+
+          > li {
+            border-right: none;
+
+            &:last-child {
+              padding-right: 7px;
+            }
+          }
+        }
+
+        &:hover {
+          > ul {
+            display: block;
+          }
         }
       }
     }
