@@ -3,10 +3,13 @@ footer {
   padding: 50px 0 10px 0;
   min-width: 100%;
   max-height: 100px;
+  display: flex;
+  align-items: center;
 
   figure {
-    max-width: 395px;
+    padding-right: 250px;
     margin: 0;
+
     figcaption {
       position: relative;
       top: -40px;
@@ -14,29 +17,14 @@ footer {
       max-width: 200px;
     }
 
+    &:nth-child(2) {
+      figcaption {
+        position: relative;
+        top: -57px;
+      }
+    }
     &:first-child {
-      padding-left: 580px;
-    }
-  }
-
-  .telephone {
-    position: relative;
-    left: 875px;
-    top: -95px;
-
-    figcaption {
-      top: -57px;
-    }
-  }
-
-
-  .message {
-    position: relative;
-    left: 1175px;
-    top: -200px;
-
-    figcaption {
-      top: -42px;
+      padding-left: 470px;
     }
   }
 }
