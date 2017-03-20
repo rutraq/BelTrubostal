@@ -3,12 +3,13 @@ body {
   background-color: #707070;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 header {
   color: white;
 }
 header #logo {
-  font-family: 'Griffy', cursive;
+  font-family: 'Lora', serif;
   font-size: 40pt;
   text-align: center;
 }
@@ -58,6 +59,7 @@ article {
   max-width: 800px;
   align-self: center;
   padding: 15px 0 15px 5px;
+  flex-grow: 1;
 }
 article a {
   text-decoration: none;
@@ -79,13 +81,21 @@ footer figure figcaption {
   max-width: 200px;
 }
 footer figure:first-child {
-  padding-left: 340px;
+  padding-left: 580px;
 }
 footer .telephone {
   position: relative;
-  left: 635px;
-  top: -80px;
+  left: 875px;
+  top: -95px;
 }
 footer .telephone figcaption {
-  top: -50px;
+  top: -57px;
+}
+footer .message {
+  position: relative;
+  left: 1175px;
+  top: -200px;
+}
+footer .message figcaption {
+  top: -42px;
 }
