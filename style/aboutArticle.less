@@ -1,0 +1,25 @@
+article {
+  align-self: center;
+  flex-grow: 1;
+  color: @textColor-of-header;
+  font-size: @fontSizeHeader - 1pt;
+  max-width: 1000px;
+
+  .padding {
+    padding-bottom: 15px;
+  }
+
+  ul {
+    font-size: @fontSizeHeader - 3pt;
+    width: 350px;
+
+    &:first-child {
+      padding-right: 220px;
+    }
+  }
+
+  .facilities {
+    display: flex;
+    flex-direction: row;
+  }
+}
