@@ -8,7 +8,7 @@ header {
 
   .menu {
     a {
-      color: @textColor-of-header;
+      color: @textColor-of-menu;
       text-decoration: none;
     }
 
@@ -29,16 +29,18 @@ header {
         }
 
         a:hover {
+          transition: 0.3s;
           color: black;
           cursor: pointer;
         }
 
         .submenu {
-          width: 100%;
+          width: 350%;
           display: none;
           position: absolute;
           top: 100%;
           padding: 0;
+          left: -115%;
 
           > li {
             border-right: none;
