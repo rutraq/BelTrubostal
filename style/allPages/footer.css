@@ -1,0 +1,25 @@
+footer {
+  background-color: #ffb7b7;
+  padding: 50px 0 10px 0;
+  min-width: 100%;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer figure {
+  padding-right: 250px;
+  margin: 0;
+}
+footer figure figcaption {
+  position: relative;
+  top: -40px;
+  left: 50px;
+  max-width: 200px;
+}
+footer figure:nth-child(2) figcaption {
+  position: relative;
+  top: -57px;
+}
+footer figure:first-child {
+  padding-left: 470px;
+}

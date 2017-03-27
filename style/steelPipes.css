@@ -5,6 +5,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+body header a[href="#"] {
+  color: black;
+}
+body header a[href="steelPipes.html"] {
+  color: black;
+}
 header {
   color: black;
 }
@@ -81,24 +87,12 @@ footer figure:first-child {
 article {
   align-self: center;
   flex-grow: 1;
-  color: black;
+  width: 1300px;
+}
+article #pageName {
+  font-size: 30pt;
+  font-weight: bold;
+}
+article .content {
   font-size: 14pt;
-  max-width: 1000px;
-}
-article .padding {
-  padding-bottom: 15px;
-}
-article ul {
-  font-size: 12pt;
-  width: 350px;
-}
-article ul:first-child {
-  padding-right: 220px;
-}
-article .facilities {
-  display: flex;
-  flex-direction: row;
-}
-article a {
-  color: black;
 }

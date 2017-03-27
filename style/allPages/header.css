@@ -1,0 +1,12 @@
+header #logo {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 40pt;
+  text-align: center;
+}
+header .menu ul {
+  list-style-type: none;
+}
+header .menu ul li {
+  display: inline-block;
+  border-right: 1px solid;
+}
