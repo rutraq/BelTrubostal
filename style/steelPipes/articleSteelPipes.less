@@ -1,0 +1,45 @@
+article {
+  align-self: center;
+  flex-grow: 1;
+  width: 1300px;
+
+  #pageName {
+    font-size: @pageNameFontSize;
+    font-weight: bold;
+  }
+
+  .content {
+    font-size: @fontSizeHeader - 1pt;
+  }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .pictures {
+    padding: 10px 0;
+
+    img {
+      width: 120px;
+      height: 110px;
+    }
+
+    img.zoom {
+      position: absolute;
+      top: 10vh;
+      width: 1000px;
+      left: 25vw;
+      height: 667px;
+      transition: 1s;
+    }
+  }
+
+  .technicalCondition ~ div {
+    padding-top: 10px;
+  }
+
+  a {
+    color: @textColor-of-header;
+  }
+}
+

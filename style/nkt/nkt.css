@@ -8,7 +8,7 @@ body {
 body header a[href="#"] {
   color: black;
 }
-body header a[href="steelPipes.html"] {
+body header a[href="nkt.html"] {
   color: black;
 }
 header {
@@ -100,6 +100,9 @@ article ul {
   margin: 0;
   padding-left: 20px;
 }
+article .pictures {
+  padding: 10px 0;
+}
 article .pictures img {
   width: 120px;
   height: 110px;
@@ -111,4 +114,10 @@ article .pictures img.zoom {
   left: 25vw;
   height: 667px;
   transition: 1s;
+}
+article .technicalCondition ~ div {
+  padding-top: 10px;
+}
+article a {
+  color: black;
 }

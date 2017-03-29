@@ -9,6 +9,5 @@ window.addEventListener('load', function () {
             target.classList.add('zoom');
         }
     }
-
     document.body.addEventListener('click', imgClick);
 });
