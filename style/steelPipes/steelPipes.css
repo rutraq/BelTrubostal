@@ -13,6 +13,7 @@ body header a[href="steelPipes.html"] {
 }
 header {
   color: black;
+  background: linear-gradient(to top, #e8291e, #2f0f0e);
 }
 header #logo {
   font-size: 40pt;
@@ -60,12 +61,12 @@ header .menu ul li:hover > ul {
   display: block;
 }
 footer {
-  background-color: #ffb7b7;
   padding: 50px 0 10px 0;
   min-width: 100%;
   max-height: 100px;
   display: flex;
   align-items: center;
+  background: linear-gradient(to bottom, #e8291e, #c7a098);
 }
 footer figure {
   padding-right: 250px;
@@ -88,6 +89,7 @@ article {
   align-self: center;
   flex-grow: 1;
   width: 1300px;
+  font-family: 'Lobster', cursive;
 }
 article #pageName {
   font-size: 30pt;
