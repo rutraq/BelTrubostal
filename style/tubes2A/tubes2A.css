@@ -95,6 +95,9 @@ article #pageName {
   font-size: 30pt;
   font-weight: bold;
 }
+article #pageName ~ div {
+  padding-top: 13px;
+}
 article .content {
   font-size: 14pt;
 }
@@ -121,4 +124,7 @@ article .technicalCondition ~ div {
 }
 article a {
   color: black;
+}
+article .cursive {
+  font-size: 12pt;
 }

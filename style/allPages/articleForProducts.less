@@ -7,6 +7,10 @@ article {
   #pageName {
     font-size: @pageNameFontSize;
     font-weight: bold;
+
+    & ~ div {
+      padding-top: 13px;
+    }
   }
 
   .content {
@@ -41,5 +45,9 @@ article {
 
   a {
     color: @textColor-of-header;
+  }
+
+  .cursive {
+    font-size: @fontSizeHeader - 3pt;
   }
 }
