@@ -13,7 +13,6 @@ header {
   background: linear-gradient(to top, #e8291e, #2f0f0e);
 }
 header #logo {
-  font-size: 40pt;
   text-align: center;
 }
 header .menu a {
@@ -57,11 +56,19 @@ header .menu ul li .submenu > li:last-child {
 header .menu ul li:hover > ul {
   display: block;
 }
+@media all and (max-width: 670px) {
+  header .menu ul {
+    font-size: 18pt;
+  }
+  header .menu ul li {
+    padding-right: 10px;
+  }
+}
 article {
   color: black;
   font-size: 13pt;
   background: linear-gradient(to bottom right, #eb2a21, orange, #e8291e);
-  max-width: 800px;
+  max-width: 60%;
   align-self: center;
   padding: 15px 0 15px 5px;
   flex-grow: 1;
@@ -71,6 +78,11 @@ article {
 }
 article a {
   text-decoration: none;
+}
+@media all and (max-width: 670px) {
+  article a[href="about.html"] {
+    font-size: 15pt;
+  }
 }
 footer {
   padding: 50px 0 10px 0;
@@ -95,5 +107,13 @@ footer figure:nth-child(2) figcaption {
   top: -57px;
 }
 footer figure:first-child {
-  padding-left: 470px;
+  padding-left: 20%;
+}
+@media all and (max-width: 670px) {
+  footer figure {
+    padding-right: 100px;
+  }
+  footer figure:first-child {
+    padding-left: 20px;
+  }
 }

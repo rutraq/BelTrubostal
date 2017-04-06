@@ -3,7 +3,7 @@ article {
   flex-grow: 1;
   color: @textColor-of-header;
   font-size: @fontSizeHeader - 1pt;
-  max-width: 1000px;
+  max-width: 100%;
   font-family: @fontForArticle;
 
   .padding {
@@ -12,7 +12,7 @@ article {
 
   ul {
     font-size: @fontSizeHeader - 3pt;
-    width: 350px;
+    max-width: 350px;
 
     &:first-child {
       padding-right: 220px;
@@ -29,7 +29,40 @@ article {
   }
 
   .picture {
+    max-width: 1000px;
     padding-bottom: 10px;
     border-bottom: @border;
+  }
+
+  img {
+    &:nth-child(1) {
+      @media all and (max-width: 670px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @media all and (min-width: 670px) {
+        display: none;
+      }
+    }
+  }
+
+  @media all and (max-width: 670px) {
+    max-width: 500px;
+
+    .picture {
+      max-width: 500px;
+    }
+
+    ul {
+      &:first-child {
+        padding-right: 150px;
+      }
+
+      li {
+        width: 150px;
+      }
+    }
   }
 }

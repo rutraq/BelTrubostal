@@ -21,5 +21,13 @@ footer figure:nth-child(2) figcaption {
   top: -57px;
 }
 footer figure:first-child {
-  padding-left: 470px;
+  padding-left: 20%;
+}
+@media all and (max-width: 670px) {
+  footer figure {
+    padding-right: 100px;
+  }
+  footer figure:first-child {
+    padding-left: 20px;
+  }
 }

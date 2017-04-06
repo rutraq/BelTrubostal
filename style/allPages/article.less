@@ -2,7 +2,7 @@ article {
   color: @textColor-of-header;
   font-size: @fontSizeHeader - 2pt;
   background: linear-gradient(to bottom right, rgba(235, 42, 33, 1), orange, rgba(232, 41, 30, 1));
-  max-width: 800px;
+  max-width: 60%;
   align-self: center;
   padding: 15px 0 15px 5px;
   flex-grow: 1;
@@ -12,5 +12,11 @@ article {
 
   a {
     text-decoration: none;
+  }
+
+  @media all and (max-width: 670px) {
+    a[href="about.html"] {
+      font-size: @fontSizeHeader;
+    }
   }
 }

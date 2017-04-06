@@ -1,0 +1,39 @@
+article {
+  display: flex;
+  flex-grow: 1;
+  font-family: @fontForArticle;
+  flex-direction: row;
+  align-self: center;
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    color: @textColor-of-header;
+  }
+
+  .team {
+    padding-bottom: 5px;
+    font-size: @fontSizeHeader;
+    font-weight: bold;
+  }
+
+  .name {
+    font-size: @fontSizeHeader - 1pt;
+  }
+
+  .right {
+    margin-left: 200px;
+  }
+
+  .left {
+    ul {
+      padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

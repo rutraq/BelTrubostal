@@ -16,7 +16,6 @@ header {
   background: linear-gradient(to top, #e8291e, #2f0f0e);
 }
 header #logo {
-  font-size: 40pt;
   text-align: center;
 }
 header .menu a {
@@ -60,6 +59,14 @@ header .menu ul li .submenu > li:last-child {
 header .menu ul li:hover > ul {
   display: block;
 }
+@media all and (max-width: 670px) {
+  header .menu ul {
+    font-size: 18pt;
+  }
+  header .menu ul li {
+    padding-right: 10px;
+  }
+}
 footer {
   padding: 50px 0 10px 0;
   min-width: 100%;
@@ -83,12 +90,20 @@ footer figure:nth-child(2) figcaption {
   top: -57px;
 }
 footer figure:first-child {
-  padding-left: 470px;
+  padding-left: 20%;
+}
+@media all and (max-width: 670px) {
+  footer figure {
+    padding-right: 100px;
+  }
+  footer figure:first-child {
+    padding-left: 20px;
+  }
 }
 article {
   align-self: center;
   flex-grow: 1;
-  width: 1300px;
+  max-width: 1300px;
   font-family: 'Lobster', cursive;
 }
 article #pageName {
@@ -126,5 +141,24 @@ article a {
   color: black;
 }
 article .cursive {
-  font-size: 12pt;
+  font-size: 13pt;
+}
+@media all and (max-width: 670px) {
+  article {
+    max-width: 600px;
+  }
+  article .pictures {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40%;
+  }
+  article .pictures img {
+    width: 80px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  article a {
+    font-size: 15pt;
+    line-height: 40px;
+  }
 }
