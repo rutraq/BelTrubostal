@@ -123,9 +123,9 @@ article .facilities {
   flex-direction: row;
 }
 article .facilities .video {
-  list-style-type: none;
   position: relative;
   left: -15px;
+  list-style-type: none;
 }
 article a {
   color: black;
