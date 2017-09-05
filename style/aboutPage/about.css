@@ -122,6 +122,11 @@ article .facilities {
   display: flex;
   flex-direction: row;
 }
+article .facilities .video {
+  list-style-type: none;
+  position: relative;
+  left: -15px;
+}
 article a {
   color: black;
 }
@@ -151,6 +156,9 @@ article .picture {
     padding-right: 150px;
   }
   article ul li {
-    width: 150px;
+    max-width: 650px;
+  }
+  article .facilities {
+    flex-direction: column;
   }
 }

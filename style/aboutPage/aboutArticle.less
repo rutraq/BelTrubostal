@@ -22,6 +22,12 @@ article {
   .facilities {
     display: flex;
     flex-direction: row;
+
+    .video {
+      list-style-type: none;
+      position: relative;
+      left: -15px;
+    }
   }
 
   a {
@@ -59,10 +65,13 @@ article {
       &:first-child {
         padding-right: 150px;
       }
-
       li {
-        width: 150px;
+        max-width: 650px;
       }
+    }
+
+    .facilities {
+      flex-direction: column;
     }
   }
 }
