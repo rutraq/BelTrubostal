@@ -75,6 +75,9 @@ footer {
   align-items: center;
   background: linear-gradient(to bottom, #e8291e, #c7a098);
 }
+footer a {
+  color: black;
+}
 footer figure {
   padding-right: 250px;
   margin: 0;
